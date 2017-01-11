@@ -1,5 +1,3 @@
-#include "libft.h"
-
 int	ft_strlen(char const *s)
 {
 	int i;
