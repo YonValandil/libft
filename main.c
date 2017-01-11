@@ -17,8 +17,8 @@ int	main(void)
 	l = ft_strlen("pikachu");
 	printf("ft_strlen = %d\n", l);
 
-	printf("s1 = %d, s2 = %d\n", a, b);
-	//ft_swap(&a, &b);
-	printf("s1 = %d, s2 = %d\n", a, b);
+	printf("a = %d, b = %d\n", a, b);
+	ft_swap(&a, &b);
+	printf("a = %d, b = %d\n", a, b);
 	return (0);
 }
