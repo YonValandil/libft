@@ -4,6 +4,7 @@
 # include <unistd.h>
 
 void	ft_putchar(char c);
-void	ft_putstr(char *str);
+void	ft_putstr(char const *s);
+int	ft_strlen(char const *s);
 
 #endif
