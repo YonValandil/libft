@@ -3,10 +3,7 @@ int	ft_strlen(char const *s)
 	int i;
 
 	i = 0;
-	while (*s)
-	{
+	while (s[i])
 		i++;
-		s++;
-	}
 	return (i);
 }
