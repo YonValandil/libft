@@ -7,5 +7,6 @@ void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 int	ft_strlen(char const *s);
 void	ft_swap(int *a, int *b);
+void	ft_strcpy(char *dest, char const *src);
 
 #endif
