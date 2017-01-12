@@ -6,13 +6,13 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:28:15 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/12 09:34:07 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/12 09:39:43 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	while (*s)
 	{
