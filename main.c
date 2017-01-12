@@ -1,6 +1,7 @@
 #include "libft.h"
 #include <stdio.h>
 #include <limits.h>
+#include <string.h>
 
 //int	main(int argc, char *argv[])
 int	main(void)
@@ -22,15 +23,5 @@ int	main(void)
 	//dup = ft_strdup("osaki ni shitsureishimasu");
 	//printf("copy = %s\n", dup);
 
-	ft_putnbr(123456789);
-	ft_putchar('\n');
-	ft_putnbr(INT_MIN);
-	ft_putchar('\n');
-	ft_putnbr(0);
-	ft_putchar('\n');
-	ft_putnbr(4377);
-	ft_putchar('\n');
-	ft_putnbr(4);
-	ft_putchar('\n');
 	return (0);
 }
