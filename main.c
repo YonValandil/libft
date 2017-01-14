@@ -16,9 +16,10 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	//void	*s;
-	//int	c;
-	//size_t	n;
+	void *s;
+	void *e;
+	//int c;
+	size_t n;
 
 	//int fd;
 	//int rd;
@@ -39,7 +40,7 @@ int	main(void)
 	//dup = ft_strdup("osaki ni shitsureishimasu");
 	//printf("copy = %s\n", dup);
 
-	/* TEST FILE ET FD
+	/*  TEST FD
 	rd = 1;
 	fd = open(argv[argc], O_RDWR);
 	if (fd > 0)
@@ -61,10 +62,16 @@ int	main(void)
 		printf("\nfile close\n");
 	*/
 
-	/*n = 10;
-	c = 4;
-	s = malloc( 20 * sizeof(int));
+	/*s = malloc(10 * sizeof(int));
+	c = 90;
+	n = 10;
 	s = ft_memset(s, c, n);
-	printf("\ns = %p\n", s);*/
+	printf("\ns = %s\n", s);
+	*/
+
+	s = malloc(10 * sizeof(char));
+	e = malloc(10 * sizeof(char));
+	n = 10;
+	s = ft_memmove(s, e, n);
 	return (0);
 }
