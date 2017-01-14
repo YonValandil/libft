@@ -10,18 +10,21 @@
 
 #define BUF_SIZE 512
 
-int	main(int argc, char *argv[])
-//int	main(void)
+//int	main(int argc, char *argv[])
+int	main(void)
 {
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
+	//void *s;
+	//int c;
+	//size_t n;
 
-	int fd;
-	int rd;
-	char buf[BUF_SIZE + 1];
+	//int fd;
+	//int rd;
+	//char buf[BUF_SIZE + 1];
 
-	argc = 1;
+	//argc = 1;
 	//a = 5;
 	//b = 9;
 	//ft_putchar('Y');
@@ -36,6 +39,7 @@ int	main(int argc, char *argv[])
 	//dup = ft_strdup("osaki ni shitsureishimasu");
 	//printf("copy = %s\n", dup);
 
+	/*  TEST FD
 	rd = 1;
 	fd = open(argv[argc], O_RDWR);
 	if (fd > 0)
@@ -55,6 +59,14 @@ int	main(int argc, char *argv[])
 	}
 	if (!close(fd))
 		printf("\nfile close\n");
+	*/
 
+
+	/*s = malloc(10 * sizeof(int));
+	c = 90;
+	n = 10;
+	s = ft_memset(s, c, n);
+	printf("\ns = %s\n", s);
+	*/
 	return (0);
 }
