@@ -31,10 +31,12 @@ $(NAME): $(OBJS)
 	$(CC) main.c $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
+	mkdir -p $(OBJS_DIR)
 	$(CC) -c $< -I$(HEADER) -o $@ $(CFLAGS)
 
 clean:
 	rm -f $(OBJS)
+	rm -Rf $(OBJS_DIR)
 
 fclean:		clean
 	rm -f $(NAME)
