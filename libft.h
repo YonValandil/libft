@@ -27,5 +27,6 @@ int	ft_strcmp(char const *s1, char const *s2);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+//void	*ft_memset(void *s, int c, size_t n);
 
 #endif
