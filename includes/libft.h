@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:35:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/14 02:20:48 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/14 09:02:08 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 #endif

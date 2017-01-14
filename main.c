@@ -16,9 +16,10 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	//void *s;
+	void *s;
+	void *e;
 	//int c;
-	//size_t n;
+	size_t n;
 
 	//int fd;
 	//int rd;
@@ -28,7 +29,7 @@ int	main(void)
 	//a = 5;
 	//b = 9;
 	//ft_putchar('Y');
-	ft_putstr("\nKonbanha\n");
+	//ft_putstr("\nKonbanha\n");
 	//printf("ft_strlen = %d\n", ft_strlen("pikachu"));
 	//printf("\nft_strcmp = %d\nstrcmp = %d\n", ft_strcmp("yo", "ya"), strcmp("yo", "ya"));
 
@@ -68,5 +69,10 @@ int	main(void)
 	s = ft_memset(s, c, n);
 	printf("\ns = %s\n", s);
 	*/
+
+	s = malloc(10 * sizeof(char));
+	e = malloc(10 * sizeof(char));
+	n = 10;
+	s = ft_memmove(s, e, n);
 	return (0);
 }
