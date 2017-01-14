@@ -28,7 +28,7 @@ int	main(void)
 	//a = 5;
 	//b = 9;
 	//ft_putchar('Y');
-	//ft_putstr("\nKonbanha\n");
+	ft_putstr("\nKonbanha\n");
 	//printf("ft_strlen = %d\n", ft_strlen("pikachu"));
 	//printf("\nft_strcmp = %d\nstrcmp = %d\n", ft_strcmp("yo", "ya"), strcmp("yo", "ya"));
 
