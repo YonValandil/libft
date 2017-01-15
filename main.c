@@ -16,10 +16,10 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	char *s;
-	char e[] = "le yoyo de tata a fait tatayoyo !";
+	//char *s;
+	//char e[] = "le yoyo de tata a fait tatayoyo !";
 	//int c;
-	size_t n;
+	//size_t n;
 
 	//int fd;
 	//int rd;
@@ -40,10 +40,11 @@ int	main(void)
 	//dup = ft_strdup("osaki ni shitsureishimasu");
 	//printf("copy = %s\n", dup);
 
-	n = 10;
+	//TEST DE STRNCPY
+	/*n = 10;
 	s = malloc((ft_strlen(e) + 1) * sizeof(char));
 	s = ft_strncpy(s, e, n);
-	printf("\nft_strncpy = %s\n", s);
+	printf("\nft_strncpy = %s\n", s);*/
 
 	/*  TEST FD
 	rd = 1;
