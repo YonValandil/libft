@@ -83,7 +83,8 @@ int	main(void)
 	ft_bzero(s, n);
 	printf("\nTEST s = %s\n", s);*/
 
-	printf("\nft_iscascii = %d\n",ft_isascii(50));
+	//printf("\nft_iscascii = %d\n",ft_isascii(50));
+	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
 
 
 	return (0);

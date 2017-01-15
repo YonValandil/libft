@@ -17,7 +17,7 @@ CFILES =	ft_putchar ft_putchar_fd			\
 			ft_strcpy ft_strdup			\
 			ft_strlen ft_strcmp			\
 			ft_memset ft_memmove ft_bzero		\
-			ft_isascii				\
+			ft_isascii ft_isdigit			\
 			ft_swap
 
 #pattern sub : $(var:pattern=replacement)
