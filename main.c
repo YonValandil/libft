@@ -16,10 +16,10 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	char *s;
+	//char *s;
 	//char *e;
 	//int c;
-	size_t n;
+	//size_t n;
 
 	//int fd;
 	//int rd;
@@ -82,6 +82,9 @@ int	main(void)
 	n = 10;
 	ft_bzero(s, n);
 	printf("\nTEST s = %s\n", s);*/
+
+	printf("\nft_iscascii = %d\n",ft_isascii(50));
+
 
 	return (0);
 }
