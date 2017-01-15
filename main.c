@@ -41,6 +41,10 @@ int	main(void)
 	//dup = ft_strdup("osaki ni shitsureishimasu");
 	//printf("copy = %s\n", dup);
 
+	/*printf("\ne = %s\n", e);
+	ft_strclr(e);
+	printf("\ne = %s\n", e);*/
+
 	//TEST DE STRNCPY
 	/*n = 10;
 	s = malloc((ft_strlen(e) + 1) * sizeof(char));

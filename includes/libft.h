@@ -39,5 +39,6 @@ int	ft_tolower(int c);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 void	ft_putendl(char const *s);
 void	ft_putendl_fd(char const *s, int fd);
+void	ft_strclr(char *s);
 
 #endif
