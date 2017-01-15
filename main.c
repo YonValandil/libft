@@ -10,6 +10,11 @@
 
 #define BUF_SIZE 512
 
+void	ptrfnct(char *s)
+{
+	*s = *s + 1;
+}
+
 //int	main(int argc, char *argv[])
 int	main(void)
 {
@@ -17,7 +22,8 @@ int	main(void)
 	//int	swapb;
 	//char 	*dup;
 	//char *s;
-	//char e[] = "le yoyo de tata a fait tatayoyo !";
+	//char e[] = "le yoyo de tata fait tatayoyo !";
+	//char e[] = "yoyo";
 	//int c;
 	//size_t n;
 
@@ -101,6 +107,9 @@ int	main(void)
 	//printf("\nft_toupper = %c\n",ft_toupper('c'));
 	//printf("\nft_tolower = %c\n",ft_tolower('C'));
 	
+	/*printf("\nstr = %s\n", e);
+	ft_striter(e, ptrfnct);
+	printf("\nstr apres = %s\n", e);*/
 
 	return (0);
 }
