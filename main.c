@@ -85,6 +85,7 @@ int	main(void)
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
+	printf("\nft_isalpha = %d\n",ft_isalpha(65));
 
 
 	return (0);

@@ -32,5 +32,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	ft_bzero(void *s, size_t n);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
+int	ft_isalpha(int c);
 
 #endif
