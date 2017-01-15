@@ -14,6 +14,7 @@ ARFLAGS =	-rcs
 CFILES =	ft_putchar ft_putchar_fd				\
 			ft_putstr ft_putstr_fd				\
 			ft_putnbr ft_putnbr_fd				\
+			ft_putendl ft_putendl_fd			\
 			ft_strcpy ft_strncpy ft_strdup			\
 			ft_strlen ft_strcmp				\
 			ft_memset ft_memmove ft_bzero			\

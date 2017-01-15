@@ -21,15 +21,16 @@ int	main(void)
 	//int c;
 	//size_t n;
 
-	//int fd;
-	//int rd;
-	//char buf[BUF_SIZE + 1];
+	/*int fd;
+	int rd;
+	char buf[BUF_SIZE + 1];*/
 
 	//argc = 1;
 	//a = 5;
 	//b = 9;
 	//ft_putchar('Y');
 	//ft_putstr("\nKonbanha\n");
+	//ft_putendl("\nKonbanha !");
 	//printf("ft_strlen = %d\n", ft_strlen("pikachu"));
 	//printf("\nft_strcmp = %d\nstrcmp = %d\n", ft_strcmp("yo", "ya"), strcmp("yo", "ya"));
 
@@ -46,14 +47,15 @@ int	main(void)
 	s = ft_strncpy(s, e, n);
 	printf("\nft_strncpy = %s\n", s);*/
 
-	/*  TEST FD
-	rd = 1;
-	fd = open(argv[argc], O_RDWR);
+	//  TEST FD
+	/*rd = 1;
+	fd = open("testfd", O_RDWR);
 	if (fd > 0)
 	{
 		ft_putchar_fd('D', fd);
 		ft_putnbr_fd(4444, fd);
 		ft_putstr_fd("\ntest ft_putstr_fd ok !\n", fd);
+		ft_putendl_fd("\ntest ft_putendl_fd !", fd);
 		lseek(fd, 0, SEEK_SET);
 		while (rd > 0)
 		{
@@ -65,8 +67,7 @@ int	main(void)
 		printf("open fail fd = %d\n", fd);
 	}
 	if (!close(fd))
-		printf("\nfile close\n");
-	*/
+		printf("\nfile close\n");*/
 
 	//TEST MEMSET
 	/*s = malloc(10 * sizeof(int));
