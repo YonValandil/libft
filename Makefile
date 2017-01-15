@@ -11,13 +11,13 @@ OBJS_DIR =	./objs/
 HEADER =	./includes/
 CFLAGS =	-Wall -Werror -Wextra
 ARFLAGS =	-rcs
-CFILES =	ft_putchar ft_putchar_fd			\
-			ft_putstr ft_putstr_fd			\
-			ft_putnbr ft_putnbr_fd			\
-			ft_strcpy ft_strdup			\
-			ft_strlen ft_strcmp			\
-			ft_memset ft_memmove ft_bzero		\
-			ft_isascii ft_isdigit ft_isalpha	\
+CFILES =	ft_putchar ft_putchar_fd				\
+			ft_putstr ft_putstr_fd				\
+			ft_putnbr ft_putnbr_fd				\
+			ft_strcpy ft_strdup				\
+			ft_strlen ft_strcmp				\
+			ft_memset ft_memmove ft_bzero			\
+			ft_isascii ft_isdigit ft_isalpha ft_isalnum	\
 			ft_swap
 
 #pattern sub : $(var:pattern=replacement)
