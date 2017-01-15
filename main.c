@@ -16,8 +16,8 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	void *s;
-	void *e;
+	char *s;
+	//char *e;
 	//int c;
 	size_t n;
 
@@ -62,16 +62,26 @@ int	main(void)
 		printf("\nfile close\n");
 	*/
 
+	//TEST MEMSET
 	/*s = malloc(10 * sizeof(int));
 	c = 90;
 	n = 10;
 	s = ft_memset(s, c, n);
-	printf("\ns = %s\n", s);
-	*/
+	printf("\ns = %s\n", s);*/
+	
+	//TEST MEMMOVE
+	/*char e[] = "memmove works !";
 
-	s = malloc(10 * sizeof(char));
-	e = malloc(10 * sizeof(char));
+	s = malloc(20 * sizeof(char));
 	n = 10;
 	s = ft_memmove(s, e, n);
+	printf("\ns = %s\n", s);*/
+
+	//TEST BZERO
+	/*s = malloc(10 * sizeof(char));
+	n = 10;
+	ft_bzero(s, n);
+	printf("\nTEST s = %s\n", s);*/
+
 	return (0);
 }

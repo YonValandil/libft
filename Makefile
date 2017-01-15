@@ -16,8 +16,8 @@ CFILES =	ft_putchar ft_putchar_fd	\
 			ft_putnbr ft_putnbr_fd		\
 			ft_strcpy ft_strdup			\
 			ft_strlen ft_strcmp			\
-			ft_memset					\
-			ft_swap
+			ft_memset ft_memmove					\
+			ft_swap ft_bzero
 
 #pattern sub : $(var:pattern=replacement)
 SRCS =		$(CFILES:%=$(SCRS_DIR)%.c)
