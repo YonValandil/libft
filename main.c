@@ -87,7 +87,9 @@ int	main(void)
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
 	//printf("\nft_isalpha = %d\n",ft_isalpha(67));
 	//printf("\nft_isalnum = %d\n",ft_isalnum(50));
-
+	//printf("\nft_toupper = %c\n",ft_toupper('c'));
+	//printf("\nft_tolower = %c\n",ft_tolower('C'));
+	
 
 	return (0);
 }
