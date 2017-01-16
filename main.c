@@ -10,9 +10,11 @@
 
 #define BUF_SIZE 512
 
-void	ptrfnct(char *s)
+void	ptrfnct(unsigned int n,char *s)
 {
-	*s = *s + 1;
+	printf("\nptrfnct avant = %c\n", s[n]);
+	s[n] = s[n] + 1;
+	printf("ptrfnct apres = %c\n", s[n]);
 }
 
 //int	main(int argc, char *argv[])
@@ -107,9 +109,12 @@ int	main(void)
 	//printf("\nft_toupper = %c\n",ft_toupper('c'));
 	//printf("\nft_tolower = %c\n",ft_tolower('C'));
 	
-	/*printf("\nstr = %s\n", e);
-	ft_striter(e, ptrfnct);
-	printf("\nstr apres = %s\n", e);*/
+	//TEST STRITER(I)
+	//printf("\nstr = %s\n", e);
+	//ft_striteri(e, ptrfnct);
+	//printf("\nstr apres = %s\n", e);
+
+
 
 	return (0);
 }
