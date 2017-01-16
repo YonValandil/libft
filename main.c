@@ -26,8 +26,8 @@ int	main(void)
 	//char *s;
 	//char e[] = "le yoyo de tata fait tatayoyo !";
 	//char e[] = "yoyo";
+	char *mem;
 	//int c;
-	//size_t n;
 
 	/*int fd;
 	int rd;
@@ -96,11 +96,9 @@ int	main(void)
 	s = ft_memmove(s, e, n);
 	printf("\ns = %s\n", s);*/
 
-	//TEST BZERO
-	/*s = malloc(10 * sizeof(char));
-	n = 10;
-	ft_bzero(s, n);
-	printf("\nTEST s = %s\n", s);*/
+	//TEST STRNEW (implicit memalloc, bzero et memset)
+	mem = ft_strnew(10);
+	printf("\nTEST mem = %s\n", mem);
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
@@ -113,8 +111,6 @@ int	main(void)
 	//printf("\nstr = %s\n", e);
 	//ft_striteri(e, ptrfnct);
 	//printf("\nstr apres = %s\n", e);
-
-
 
 	return (0);
 }

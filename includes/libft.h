@@ -42,5 +42,7 @@ void	ft_putendl_fd(char const *s, int fd);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void(*f)(char *));
 void	ft_striteri(char *s, void(*f)(unsigned int, char *));
+void	*ft_memalloc(size_t size);
+char	*ft_strnew(size_t size);
 
 #endif
