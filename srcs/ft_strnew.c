@@ -4,6 +4,6 @@ char	*ft_strnew(size_t size)
 {
 	char *s;
 
-	s = ft_memalloc(size + 1);
+	s = ft_memalloc(sizeof(char) * (size + 1));
 	return (s);
 }
