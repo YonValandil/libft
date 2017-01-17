@@ -24,9 +24,10 @@ int	main(void)
 	//int	swapb;
 	//char 	*dup;
 	//char *s;
-	//char e[] = "le yoyo de tata fait tatayoyo !";
-	//char e[] = "yoyo";
-	char *mem;
+	//char s[] = "le yoyo de tata fait tatayoyo !";
+	//char e[] = "panda";
+	//char *strcat;
+	//char *mem;
 	//int c;
 
 	/*int fd;
@@ -97,8 +98,8 @@ int	main(void)
 	printf("\ns = %s\n", s);*/
 
 	//TEST STRNEW (implicit memalloc, bzero et memset)
-	mem = ft_strnew(10);
-	printf("\nTEST mem = %s\n", mem);
+	/*mem = ft_strnew(10);
+	printf("\nTEST mem = %s\n", mem);*/
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
@@ -111,6 +112,15 @@ int	main(void)
 	//printf("\nstr = %s\n", e);
 	//ft_striteri(e, ptrfnct);
 	//printf("\nstr apres = %s\n", e);
+
+	//TEST FT_STRCAT
+	/*strcat = ft_strnew(ft_strlen(e) + 4);
+	strcat[0] = 'y';
+	strcat[1] = 'o';
+	strcat[2] = 'y';
+	strcat[3] = 'o';
+	strcat = ft_strcat(strcat, e);
+	printf("\nstrcat = %s\n", strcat);*/
 
 	return (0);
 }
