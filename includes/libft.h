@@ -46,5 +46,7 @@ void	*ft_memalloc(size_t size);
 char	*ft_strnew(size_t size);
 char	*ft_strcat(char *dest, const char *src);
 void	ft_memdel(void **ap);
+int	ft_isprint(int c);
+//int	ft_atoi(const char *nptr);
 
 #endif

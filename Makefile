@@ -11,17 +11,15 @@ OBJS_DIR =	./objs/
 HEADER =	./includes/
 CFLAGS =	-Wall -Werror -Wextra
 ARFLAGS =	-rcs
-CFILES =	ft_putchar ft_putchar_fd ft_putstr ft_putstr_fd	\
-		ft_putnbr ft_putnbr_fd				\
-		ft_putendl ft_putendl_fd			\
-		ft_strcpy ft_strncpy ft_strdup			\
-		ft_strlen ft_strcmp ft_strcat			\
-		ft_memset ft_memmove ft_bzero			\
-		ft_memalloc ft_memdel				\
-		ft_isascii ft_isdigit ft_isalpha ft_isalnum	\
-		ft_toupper ft_tolower				\
-		ft_swap 					\
-		ft_strclr ft_striter ft_striteri ft_strnew
+CFILES =	ft_putchar ft_putchar_fd ft_putstr ft_putstr_fd		\
+		ft_putnbr ft_putnbr_fd ft_putendl ft_putendl_fd		\
+		ft_strcpy ft_strncpy ft_strdup				\
+		ft_strlen ft_strcmp ft_strcat				\
+		ft_bzero ft_memalloc ft_memdel ft_memset ft_memmove	\
+		ft_isascii ft_isdigit ft_isalpha ft_isalnum ft_isprint	\
+		ft_toupper ft_tolower					\
+		ft_strclr ft_striter ft_striteri ft_strnew		\
+		ft_swap
 
 #pattern sub : $(var:pattern=replacement)
 SRCS =		$(CFILES:%=$(SCRS_DIR)%.c)

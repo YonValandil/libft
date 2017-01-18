@@ -108,6 +108,7 @@ int	main(void)
 	//printf("\nft_isalnum = %d\n",ft_isalnum(50));
 	//printf("\nft_toupper = %c\n",ft_toupper('c'));
 	//printf("\nft_tolower = %c\n",ft_tolower('C'));
+	//printf("\nft_isprint = %d\n",ft_isprint(32));
 	
 	//TEST STRITER(I)
 	//printf("\nstr = %s\n", e);
