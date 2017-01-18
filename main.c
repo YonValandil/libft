@@ -109,6 +109,7 @@ int	main(void)
 	//printf("\nft_toupper = %c\n",ft_toupper('c'));
 	//printf("\nft_tolower = %c\n",ft_tolower('C'));
 	//printf("\nft_isprint = %d\n",ft_isprint(32));
+	//printf("\nft_isspace = %d\n",ft_isspace('\t'));
 	
 	//TEST STRITER(I)
 	//printf("\nstr = %s\n", e);
@@ -123,6 +124,14 @@ int	main(void)
 	strcat[3] = 'o';
 	strcat = ft_strcat(strcat, e);
 	printf("\nstrcat = %s\n", strcat);*/
+
+	//TEST ATOI
+	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));
+	printf("\natoi = %d\n", atoi("\n\t +9997"));
+	printf("\nft_atoi = %d\n", ft_atoi("\n\t -9997"));
+	printf("\natoi = %d\n", atoi("\n\t -9997"));
+	printf("\nft_atoi = %d\n", ft_atoi("\n\t --9a9a9 7a"));
+	printf("\natoi = %d\n", atoi("\n\t --9a9a9 7a"));*/
 
 	return (0);
 }

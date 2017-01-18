@@ -36,6 +36,8 @@ int	ft_isalpha(int c);
 int	ft_isalnum(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+int	ft_isprint(int c);
+int	ft_isspace(int c);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 void	ft_putendl(char const *s);
 void	ft_putendl_fd(char const *s, int fd);
@@ -46,7 +48,6 @@ void	*ft_memalloc(size_t size);
 char	*ft_strnew(size_t size);
 char	*ft_strcat(char *dest, const char *src);
 void	ft_memdel(void **ap);
-int	ft_isprint(int c);
-//int	ft_atoi(const char *nptr);
+int	ft_atoi(const char *nptr);
 
 #endif
