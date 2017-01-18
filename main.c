@@ -97,9 +97,10 @@ int	main(void)
 	s = ft_memmove(s, e, n);
 	printf("\ns = %s\n", s);*/
 
-	//TEST STRNEW (implicit memalloc, bzero et memset)
+	//TEST STRNEW (implicit memalloc, bzero et memset et memdel)
 	/*mem = ft_strnew(10);
-	printf("\nTEST mem = %s\n", mem);*/
+	printf("\nTEST mem = %s\n", mem);
+	ft_memdel(&mem);*/
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));

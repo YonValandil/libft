@@ -45,5 +45,6 @@ void	ft_striteri(char *s, void(*f)(unsigned int, char *));
 void	*ft_memalloc(size_t size);
 char	*ft_strnew(size_t size);
 char	*ft_strcat(char *dest, const char *src);
+void	ft_memdel(void **ap);
 
 #endif
