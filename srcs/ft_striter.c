@@ -6,11 +6,11 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 02:43:28 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/19 02:57:07 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/19 04:30:19 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_striter(char *s, void(*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	int i;
 

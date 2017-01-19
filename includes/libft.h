@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:35:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/19 02:10:48 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/19 05:22:55 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,7 @@ void	ft_memdel(void **ap);
 int		ft_atoi(const char *nptr);
 void	ft_strdel(char **as);
 char	*ft_strncat(char *dest, const char *src, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
