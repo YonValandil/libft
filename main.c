@@ -27,7 +27,7 @@ int	main(void)
 	//char s[] = "le yoyo de tata fait tatayoyo !";
 	//char e[] = "panda";
 	//char *strcat;
-	//char *mem;
+	char *mem;
 	//int c;
 
 	/*int fd;
@@ -97,10 +97,16 @@ int	main(void)
 	s = ft_memmove(s, e, n);
 	printf("\ns = %s\n", s);*/
 
-	//TEST STRNEW (implicit memalloc, bzero et memset et memdel)
-	/*mem = ft_strnew(10);
+	//TEST STRNEW (implicit memalloc, bzero et memset, strdel et memdel)
+	mem = ft_strnew(10);
+	mem[0] = 's';
+	mem[1] = 'u';
+	mem[2] = 'p';
+	mem[3] = '\0';
 	printf("\nTEST mem = %s\n", mem);
-	ft_memdel(&mem);*/
+	ft_memdel((void**)&mem);
+	//ft_strdel(&mem);
+	//printf("\nTEST del mem = %s\n", mem);
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
@@ -116,14 +122,15 @@ int	main(void)
 	//ft_striteri(e, ptrfnct);
 	//printf("\nstr apres = %s\n", e);
 
-	//TEST FT_STRCAT
+	//TEST FT_STRCAT FT_STRNCAT
 	/*strcat = ft_strnew(ft_strlen(e) + 4);
 	strcat[0] = 'y';
 	strcat[1] = 'o';
 	strcat[2] = 'y';
-	strcat[3] = 'o';
-	strcat = ft_strcat(strcat, e);
-	printf("\nstrcat = %s\n", strcat);*/
+	strcat[3] = 'o';*/
+	//strcat = ft_strcat(strcat, e);
+	//strcat = ft_strncat(strcat, e, 2);
+	//printf("\nstrncat = %s\n", strcat);
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));

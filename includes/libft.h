@@ -49,5 +49,7 @@ char	*ft_strnew(size_t size);
 char	*ft_strcat(char *dest, const char *src);
 void	ft_memdel(void **ap);
 int	ft_atoi(const char *nptr);
+void	ft_strdel(char **as);
+//char	*ft_strncat(char *dest, const char *src, size_t n);
 
 #endif
