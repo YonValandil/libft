@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:35:55 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/12 09:35:56 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/19 05:05:53 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_strcmp(char const *s1, char const *s2)
 		s1++;
 		s2++;
 	}
-	return (*s1 - *s2);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

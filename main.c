@@ -42,6 +42,8 @@ int	main(void)
 	//ft_putendl("\nKonbanha !");
 	//printf("ft_strlen = %d\n", ft_strlen("pikachu"));
 	//printf("\nft_strcmp = %d\nstrcmp = %d\n", ft_strcmp("yo", "ya"), strcmp("yo", "ya"));
+	printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 1), strncmp("yoya", "yaya", 1));
+	printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 4), strncmp("yoya", "yaya", 4));
 
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);
 	//ft_swap(&swapa, &swapb);
@@ -97,16 +99,15 @@ int	main(void)
 	s = ft_memmove(s, e, n);
 	printf("\ns = %s\n", s);*/
 
-	//TEST STRNEW (implicit memalloc, bzero et memset, strdel et memdel)
-	mem = ft_strnew(10);
-	mem[0] = 's';
-	mem[1] = 'u';
-	mem[2] = 'p';
-	mem[3] = '\0';
+	//TEST STRNEW (implicit memalloc, bzero, memset et strdel, memdel)
+	/*mem = ft_strnew(10);
+	mem[0] = 'y';
+	mem[1] = 'o';
+	mem[2] = '\0';
 	printf("\nTEST mem = %s\n", mem);
-	ft_memdel((void**)&mem);
+	ft_memdel((void **)&mem);
 	//ft_strdel(&mem);
-	//printf("\nTEST del mem = %s\n", mem);
+	printf("\nTEST mem apres free = %s\n", mem);*/
 
 	//printf("\nft_iscascii = %d\n",ft_isascii(50));
 	//printf("\nft_isdigit = %d\n",ft_isdigit(47));
@@ -122,15 +123,17 @@ int	main(void)
 	//ft_striteri(e, ptrfnct);
 	//printf("\nstr apres = %s\n", e);
 
-	//TEST FT_STRCAT FT_STRNCAT
+	//TEST FT_STRCAT ET FT_STRNCAT
 	/*strcat = ft_strnew(ft_strlen(e) + 4);
 	strcat[0] = 'y';
 	strcat[1] = 'o';
 	strcat[2] = 'y';
-	strcat[3] = 'o';*/
+	strcat[3] = 'o';
+	strcat[4] = '\0';
 	//strcat = ft_strcat(strcat, e);
-	//strcat = ft_strncat(strcat, e, 2);
-	//printf("\nstrncat = %s\n", strcat);
+	//printf("\nstrcat = %s\n", strcat);
+	strcat = ft_strncat(strcat, e, 2);
+	printf("\nstrncat = %s\n", strcat);*/
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));
