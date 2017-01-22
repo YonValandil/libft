@@ -27,7 +27,7 @@ int	main(void)
 	//char s[] = "le yoyo de tata fait tatayoyo !";
 	//char e[] = "panda";
 	//char *strcat;
-	char *mem;
+	//char *mem;
 	//int c;
 
 	/*int fd;
@@ -42,25 +42,20 @@ int	main(void)
 	//ft_putendl("\nKonbanha !");
 	//printf("ft_strlen = %d\n", ft_strlen("pikachu"));
 	//printf("\nft_strcmp = %d\nstrcmp = %d\n", ft_strcmp("yo", "ya"), strcmp("yo", "ya"));
-	printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 1), strncmp("yoya", "yaya", 1));
-	printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 4), strncmp("yoya", "yaya", 4));
+	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 1), strncmp("yoya", "yaya", 1));
+	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 4), strncmp("yoya", "yaya", 4));
+	//printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp("yoya", "yaya", 4), memcmp("yoya", "yaya", 4));
 
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);
 	//ft_swap(&swapa, &swapb);
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);
 
-	//dup = ft_strdup("osaki ni shitsureishimasu");
-	//printf("copy = %s\n", dup);
+	/*dup = ft_strdup("osaki ni shitsureishimasu");
+	printf("copy = %s\n", dup);*/
 
 	/*printf("\ne = %s\n", e);
 	ft_strclr(e);
 	printf("\ne = %s\n", e);*/
-
-	//TEST DE STRNCPY
-	/*n = 10;
-	s = malloc((ft_strlen(e) + 1) * sizeof(char));
-	s = ft_strncpy(s, e, n);
-	printf("\nft_strncpy = %s\n", s);*/
 
 	//  TEST FD
 	/*rd = 1;
@@ -92,12 +87,46 @@ int	main(void)
 	printf("\ns = %s\n", s);*/
 	
 	//TEST MEMMOVE
-	/*char e[] = "memmove works !";
+	/*int *i;
+	int *is;
+	i = ft_memalloc(sizeof(int) * 5);
+	is = ft_memalloc(sizeof(int) * 5);
+	*i = 12345;
+	is = ft_memmove(is, i, 5);
+	printf("\ns = %d\n", *is);
 
-	s = malloc(20 * sizeof(char));
-	n = 10;
-	s = ft_memmove(s, e, n);
+	s = ft_strnew(ft_strlen(e));
+	s = e + 2;
+	s = ft_memmove(s, e, 5);
 	printf("\ns = %s\n", s);*/
+	//ft_memdel((void**)&s);
+
+	//TEST MEMCHR
+	/*s = ft_strnew(ft_strlen(e));
+	s = ft_memchr(e, 's', 10);
+	printf("\nft_memchr = %s\n", s);*/
+	//ft_memdel((void**)&s);
+
+	//TEST MEMCPY ET MEMCCPY
+	/*int *ss;
+	int *ee;
+	ee = ft_memalloc(sizeof(int));
+	ss = ft_memalloc(*ee);
+	*ee = 5554;*/
+	/*s = ft_strnew(ft_strlen(e));
+	//s = e + 2;
+	//ss = ft_memcpy(ss, ee, 10);
+	s = ft_memccpy(s, e, 'd', 5);
+	//printf("\ns = %d\n", *ss);
+	printf("\ns = %s\n", s);
+	ft_memdel((void**)&s);*/
+	
+	//TEST DE STRCPY ET STRNCPY
+	/*s = ft_strnew(ft_strlen(e));
+	//s = e + 2; //test du bug quand les pointeurs sont sur la meme chaine
+	s = ft_strncpy(s, e, 30);
+	printf("\nft_strncpy = %s\n", s);
+	ft_strdel(&s);*/
 
 	//TEST STRNEW (implicit memalloc, bzero, memset et strdel, memdel)
 	/*mem = ft_strnew(10);
