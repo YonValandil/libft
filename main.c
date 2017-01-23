@@ -45,6 +45,7 @@ int	main(void)
 	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 1), strncmp("yoya", "yaya", 1));
 	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 4), strncmp("yoya", "yaya", 4));
 	//printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp("yoya", "yaya", 4), memcmp("yoya", "yaya", 4));
+	//printf("\nft_strtrim =%s.\n", ft_strtrim("\t y ooo o \n"));
 
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);
 	//ft_swap(&swapa, &swapb);
@@ -171,6 +172,11 @@ int	main(void)
 	printf("\natoi = %d\n", atoi("\n\t -9997"));
 	printf("\nft_atoi = %d\n", ft_atoi("\n\t --9a9a9 7a"));
 	printf("\natoi = %d\n", atoi("\n\t --9a9a9 7a"));*/
-
+	
+	//ITOA
+	/*printf("\nitoa = %s\n", ft_itoa(199));
+	printf("\nitoa = %s\n", ft_itoa(-398));
+	printf("\nitoa = %s\n", ft_itoa(0));
+	printf("\nitoa = %s\n", ft_itoa(5554));*/
 	return (0);
 }
