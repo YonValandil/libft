@@ -63,5 +63,6 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
 #endif

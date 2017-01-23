@@ -33,10 +33,10 @@ int	main(void)
 	//int	swapb;
 	//char 	*dup;
 	//char *s;
-	char s[] = "le yoyo de tata fait tatayoyo !";
-	char e[] = "panda";
+	//char s[] = "le yoyo de tata fait tatayoyo !";
+	//char e[] = "panda";
 	//char *strcat;
-	char *strjoin;
+	//char *strjoin;
 	//char *mem;
 	//int c;
 
@@ -195,6 +195,9 @@ int	main(void)
 	//TEST STRJOIN
 	//strjoin = ft_strjoin(s, e);
 	//printf("\nstrjoin = %s\n", strjoin);
+
+	//STRSUB
+	//printf("\nstrsub = %s\n", ft_strsub("panda des familles", 6, 12));
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));
