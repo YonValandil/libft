@@ -47,6 +47,19 @@ int	main(void)
 	//printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp("yoya", "yaya", 4), memcmp("yoya", "yaya", 4));
 	//printf("\nft_strtrim =%s.\n", ft_strtrim("\t y ooo o \n"));
 
+	//TEST STREQUE STRNEQU
+	/*printf("\nft_strequ =%d\n", ft_strequ("yoyo", "yoyo"));
+	printf("\nft_strcmp =%d\n\n", ft_strcmp("yoyo", "yoyo"));
+	printf("\nft_strequ =%d\n", ft_strequ("o", "a"));
+	printf("\nft_strcmp =%d\n\n", ft_strcmp("o", "a"));*/
+
+	/*printf("\nft_strnequ =%d\n", ft_strnequ("yoyo", "yoyo", 3));
+	printf("\nft_strncmp =%d\n\n", ft_strncmp("yoyo", "yoyo", 3));
+	printf("\nft_strnequ =%d\n", ft_strnequ("oooo", "oooa", 2));
+	printf("\nft_strncmp =%d\n\n", ft_strncmp("oooo", "oooa", 2));
+	printf("\nft_strnequ =%d\n", ft_strnequ("oooo", "oooa", 4));
+	printf("\nft_strncmp =%d\n\n", ft_strncmp("oooo", "oooa", 4));*/
+
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);
 	//ft_swap(&swapa, &swapb);
 	//printf("swapa = %d, swapb = %d\n", swapa, swapb);

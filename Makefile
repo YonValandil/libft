@@ -18,7 +18,7 @@ CFILES =	ft_putchar ft_putchar_fd ft_putstr ft_putstr_fd					\
 			ft_bzero ft_memalloc ft_memdel ft_memset ft_memmove ft_memcpy ft_memccpy ft_memcmp ft_memchr		\
 			ft_isascii ft_isdigit ft_isalpha ft_isalnum ft_isspace ft_isprint	\
 			ft_toupper ft_tolower ft_atoi ft_itoa					\
-			ft_strclr ft_striter ft_striteri ft_strnew ft_strdel			\
+			ft_strclr ft_striter ft_striteri ft_strnew ft_strdel ft_strequ ft_strnequ	\
 			ft_swap
 
 #pattern sub : $(var:pattern=replacement)
