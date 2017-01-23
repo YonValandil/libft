@@ -17,15 +17,24 @@ void	ptrfnct(unsigned int n,char *s)
 	printf("ptrfnct apres = %c\n", s[n]);
 }
 
+char	ptrfnctchar(unsigned int i, char c)
+{
+	printf("\nptrfnct avant = %c\n", c);
+	printf("\ni =  = %d\n", i);
+	c = c + 1;
+	printf("ptrfnct apres = %c\n", c);
+	return (c);
+}
+
 //int	main(int argc, char *argv[])
 int	main(void)
 {
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	//char *s;
+	char *s;
 	//char s[] = "le yoyo de tata fait tatayoyo !";
-	//char e[] = "panda";
+	char e[] = "panda";
 	//char *strcat;
 	//char *mem;
 	//int c;
@@ -161,10 +170,14 @@ int	main(void)
 	//printf("\nft_isprint = %d\n",ft_isprint(32));
 	//printf("\nft_isspace = %d\n",ft_isspace('\t'));
 	
-	//TEST STRITER(I)
+	//TEST STRITER ITERI, STRMAP STRMAPI
 	//printf("\nstr = %s\n", e);
 	//ft_striteri(e, ptrfnct);
 	//printf("\nstr apres = %s\n", e);
+	
+	/*printf("\nstr = %s\n", e);
+	s = ft_strmapi(e, ptrfnctchar);
+	printf("\nstr apres = %s\n", s);*/
 
 	//TEST FT_STRCAT ET FT_STRNCAT
 	/*strcat = ft_strnew(ft_strlen(e) + 4);
