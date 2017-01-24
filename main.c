@@ -130,6 +130,24 @@ int	main(void)
 	s = ft_memchr(e, 's', 10);
 	printf("\nft_memchr = %s\n", s);*/
 	//ft_memdel((void**)&s);
+	
+	//TEST STRCHR ET STRRCHR
+	/*s = ft_strnew(ft_strlen(e));
+	s = ft_strchr(e, 'a');
+	printf("\nft_strchr = %s\n", s);*/
+	
+	/*s = ft_strnew(ft_strlen(e));
+	s = ft_strrchr(e, 'd');
+	printf("\nft_strrchr = %s\n", s);*/
+	//ft_memdel((void**)&s);
+
+	//TEST STRSTR ET STRNSTR
+	/*printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "avec totoro"));
+	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "avec t"));
+	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "sssssss"));
+	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", ""));*/
+
+
 
 	//TEST MEMCPY ET MEMCCPY
 	/*int *ss;
@@ -192,12 +210,27 @@ int	main(void)
 	strcat = ft_strncat(strcat, e, 2);
 	printf("\nstrncat = %s\n", strcat);*/
 
+	//TEST STRLCAT
+	/*strcat = ft_strnew(ft_strlen(e) + 4);
+	strcat[0] = 'y';
+	strcat[1] = 'o';
+	strcat[2] = 'y';
+	strcat[3] = 'o';
+	strcat[4] = '\0';
+	printf("\nstrlcat = %zu\n", ft_strlcat(strcat, e, 3));*/ //yoyo et panda
+
 	//TEST STRJOIN
 	//strjoin = ft_strjoin(s, e);
 	//printf("\nstrjoin = %s\n", strjoin);
 
 	//STRSUB
 	//printf("\nstrsub = %s\n", ft_strsub("panda des familles", 6, 12));
+
+	//TEST STRSPLIT
+	/*s = ft_strsplit("un panda", ' ');
+	printf("\nstrsplit = %s\n", s[1]);
+	printf("\nstrsplit = %s\n", s[2]);
+	printf("\nstrsplit = %s\n", s[3]);*/
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));

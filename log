@@ -1,0 +1,213 @@
+rm -f ./objs/ft_putchar.o ./objs/ft_putchar_fd.o ./objs/ft_putstr.o ./objs/ft_putstr_fd.o ./objs/ft_putnbr.o ./objs/ft_putnbr_fd.o ./objs/ft_putendl.o ./objs/ft_putendl_fd.o ./objs/ft_strcpy.o ./objs/ft_strncpy.o ./objs/ft_strdup.o ./objs/ft_strlen.o ./objs/ft_strcmp.o ./objs/ft_strncmp.o ./objs/ft_strcat.o ./objs/ft_strncat.o ./objs/ft_strlcat.o ./objs/ft_strtrim.o ./objs/ft_strjoin.o ./objs/ft_strsub.o ./objs/ft_bzero.o ./objs/ft_memalloc.o ./objs/ft_memdel.o ./objs/ft_memset.o ./objs/ft_memmove.o ./objs/ft_memcpy.o ./objs/ft_memccpy.o ./objs/ft_memcmp.o ./objs/ft_memchr.o ./objs/ft_strstr.o ./objs/ft_isascii.o ./objs/ft_isdigit.o ./objs/ft_isalpha.o ./objs/ft_isalnum.o ./objs/ft_isspace.o ./objs/ft_isprint.o ./objs/ft_toupper.o ./objs/ft_tolower.o ./objs/ft_atoi.o ./objs/ft_itoa.o ./objs/ft_strclr.o ./objs/ft_striter.o ./objs/ft_striteri.o ./objs/ft_strnew.o ./objs/ft_strdel.o ./objs/ft_strequ.o ./objs/ft_strnequ.o ./objs/ft_strmap.o ./objs/ft_strmapi.o ./objs/ft_strchr.o ./objs/ft_strrchr.o ./objs/ft_swap.o 
+rm -Rf ./objs/
+rm -f libft.a
+rm -f bin 
+mkdir -p ./objs/
+gcc -c srcs/ft_putchar.c -I./includes/ -o objs/ft_putchar.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putchar_fd.c -I./includes/ -o objs/ft_putchar_fd.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putstr.c -I./includes/ -o objs/ft_putstr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putstr_fd.c -I./includes/ -o objs/ft_putstr_fd.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putnbr.c -I./includes/ -o objs/ft_putnbr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putnbr_fd.c -I./includes/ -o objs/ft_putnbr_fd.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putendl.c -I./includes/ -o objs/ft_putendl.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_putendl_fd.c -I./includes/ -o objs/ft_putendl_fd.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strcpy.c -I./includes/ -o objs/ft_strcpy.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strncpy.c -I./includes/ -o objs/ft_strncpy.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strdup.c -I./includes/ -o objs/ft_strdup.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strlen.c -I./includes/ -o objs/ft_strlen.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strcmp.c -I./includes/ -o objs/ft_strcmp.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strncmp.c -I./includes/ -o objs/ft_strncmp.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strcat.c -I./includes/ -o objs/ft_strcat.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strncat.c -I./includes/ -o objs/ft_strncat.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strlcat.c -I./includes/ -o objs/ft_strlcat.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strtrim.c -I./includes/ -o objs/ft_strtrim.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strjoin.c -I./includes/ -o objs/ft_strjoin.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strsub.c -I./includes/ -o objs/ft_strsub.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_bzero.c -I./includes/ -o objs/ft_bzero.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memalloc.c -I./includes/ -o objs/ft_memalloc.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memdel.c -I./includes/ -o objs/ft_memdel.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memset.c -I./includes/ -o objs/ft_memset.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memmove.c -I./includes/ -o objs/ft_memmove.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memcpy.c -I./includes/ -o objs/ft_memcpy.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memccpy.c -I./includes/ -o objs/ft_memccpy.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memcmp.c -I./includes/ -o objs/ft_memcmp.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_memchr.c -I./includes/ -o objs/ft_memchr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strstr.c -I./includes/ -o objs/ft_strstr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isascii.c -I./includes/ -o objs/ft_isascii.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isdigit.c -I./includes/ -o objs/ft_isdigit.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isalpha.c -I./includes/ -o objs/ft_isalpha.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isalnum.c -I./includes/ -o objs/ft_isalnum.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isspace.c -I./includes/ -o objs/ft_isspace.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_isprint.c -I./includes/ -o objs/ft_isprint.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_toupper.c -I./includes/ -o objs/ft_toupper.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_tolower.c -I./includes/ -o objs/ft_tolower.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_atoi.c -I./includes/ -o objs/ft_atoi.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_itoa.c -I./includes/ -o objs/ft_itoa.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strclr.c -I./includes/ -o objs/ft_strclr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_striter.c -I./includes/ -o objs/ft_striter.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_striteri.c -I./includes/ -o objs/ft_striteri.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strnew.c -I./includes/ -o objs/ft_strnew.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strdel.c -I./includes/ -o objs/ft_strdel.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strequ.c -I./includes/ -o objs/ft_strequ.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strnequ.c -I./includes/ -o objs/ft_strnequ.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strmap.c -I./includes/ -o objs/ft_strmap.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strmapi.c -I./includes/ -o objs/ft_strmapi.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strchr.c -I./includes/ -o objs/ft_strchr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_strrchr.c -I./includes/ -o objs/ft_strrchr.o -Wall -Werror -Wextra
+mkdir -p ./objs/
+gcc -c srcs/ft_swap.c -I./includes/ -o objs/ft_swap.o -Wall -Werror -Wextra
+ar -rcs libft.a ./objs/ft_putchar.o ./objs/ft_putchar_fd.o ./objs/ft_putstr.o ./objs/ft_putstr_fd.o ./objs/ft_putnbr.o ./objs/ft_putnbr_fd.o ./objs/ft_putendl.o ./objs/ft_putendl_fd.o ./objs/ft_strcpy.o ./objs/ft_strncpy.o ./objs/ft_strdup.o ./objs/ft_strlen.o ./objs/ft_strcmp.o ./objs/ft_strncmp.o ./objs/ft_strcat.o ./objs/ft_strncat.o ./objs/ft_strlcat.o ./objs/ft_strtrim.o ./objs/ft_strjoin.o ./objs/ft_strsub.o ./objs/ft_bzero.o ./objs/ft_memalloc.o ./objs/ft_memdel.o ./objs/ft_memset.o ./objs/ft_memmove.o ./objs/ft_memcpy.o ./objs/ft_memccpy.o ./objs/ft_memcmp.o ./objs/ft_memchr.o ./objs/ft_strstr.o ./objs/ft_isascii.o ./objs/ft_isdigit.o ./objs/ft_isalpha.o ./objs/ft_isalnum.o ./objs/ft_isspace.o ./objs/ft_isprint.o ./objs/ft_toupper.o ./objs/ft_tolower.o ./objs/ft_atoi.o ./objs/ft_itoa.o ./objs/ft_strclr.o ./objs/ft_striter.o ./objs/ft_striteri.o ./objs/ft_strnew.o ./objs/ft_strdel.o ./objs/ft_strequ.o ./objs/ft_strnequ.o ./objs/ft_strmap.o ./objs/ft_strmapi.o ./objs/ft_strchr.o ./objs/ft_strrchr.o ./objs/ft_swap.o 
+libft.a Done !
+gcc main.c libft.a -I./includes/ -o bin  -Wall -Werror -Wextra && ./bin 
+
+DEBUT : big = un panda avec totoro
+
+DEBUT : little = avec totoro
+
+
+big[i] = u
+
+little[j] = a
+
+
+big[i] = n
+
+little[j] = a
+
+
+big[i] =  
+
+little[j] = a
+
+
+big[i] = p
+
+little[j] = a
+
+
+big[i] = a
+
+little[j] = a
+
+
+avant : little[j] = a, = big[i] = a,
+
+little = a, 
+= big = a,
+
+big[i] = n
+
+little[j] = a
+
+
+big[i] = d
+
+little[j] = a
+
+
+big[i] = a
+
+little[j] = a
+
+
+avant : little[j] = a, = big[i] = a,
+
+little = a, 
+= big = a,
+
+big[i] =  
+
+little[j] = a
+
+
+big[i] = a
+
+little[j] = a
+
+
+avant : little[j] = a, = big[i] = a,
+
+little = a, 
+= big = a,
+
+little = v, 
+= big = v,
+
+little = e, 
+= big = e,
+
+little = c, 
+= big = c,
+
+little =  , 
+= big =  ,
+
+little = t, 
+= big = t,
+
+little = o, 
+= big = o,
+
+little = t, 
+= big = t,
+
+little = o, 
+= big = o,
+
+little = r, 
+= big = r,
+
+little = o, 
+= big = o,
+
+strstr = avec totoro
