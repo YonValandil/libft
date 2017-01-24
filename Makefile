@@ -30,7 +30,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar $(ARFLAGS) $@ $(OBJS)
 	@echo $@ Done !
-	$(CC) main.c $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
+	$(CC) main.c -g $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	mkdir -p $(OBJS_DIR)
