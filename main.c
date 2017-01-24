@@ -32,7 +32,7 @@ int	main(void)
 	//int	swapa;
 	//int	swapb;
 	//char 	*dup;
-	//char *s;
+	//char **s;
 	//char s[] = "le yoyo de tata fait tatayoyo !";
 	//char e[] = "panda";
 	//char *strcat;
@@ -145,12 +145,14 @@ int	main(void)
 	/*printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "avec totoro"));
 	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "avec t"));
 	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "sssssss"));
+	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "pssss"));
 	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", ""));*/
 
 	/*printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "avec totoro", 4));
 	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "un panda", 6));
 	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "avec t", 6));
 	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "sssssss", 5));
+	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "panss", 4));
 	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "", 0));*/
 
 
@@ -234,8 +236,7 @@ int	main(void)
 	//TEST STRSPLIT
 	/*s = ft_strsplit("un panda", ' ');
 	printf("\nstrsplit = %s\n", s[1]);
-	printf("\nstrsplit = %s\n", s[2]);
-	printf("\nstrsplit = %s\n", s[3]);*/
+	printf("\nstrsplit = %s\n", s[2]);*/
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));

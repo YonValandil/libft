@@ -3,6 +3,8 @@
 
 char	**ft_strsplit(char const *s, char c)
 {
+	c = 42;
+	c++;
 	/*int	i;
 	int	j;
 	int	k;
@@ -39,5 +41,5 @@ char	**ft_strsplit(char const *s, char c)
 		}
 	}
 	printf("\nfin: %s\n", ts[1]);*/
-	return (0);
+	return ((char**)s);
 }
