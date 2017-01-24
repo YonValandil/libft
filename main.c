@@ -147,6 +147,11 @@ int	main(void)
 	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", "sssssss"));
 	printf("\nstrstr = %s\n", ft_strstr("un panda avec totoro", ""));*/
 
+	/*printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "avec totoro", 4));
+	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "un panda", 6));
+	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "avec t", 6));
+	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "sssssss", 5));
+	printf("\nstrnstr = %s\n", ft_strnstr("un panda avec totoro", "", 0));*/
 
 
 	//TEST MEMCPY ET MEMCCPY
