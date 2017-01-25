@@ -4,7 +4,7 @@
 .SUFFIXES:
 
 CC =		gcc
-EXEC =		bin #a enlever
+EXEC =		bin
 NAME =		libft.a
 SRCS_DIR =	./srcs/
 OBJS_DIR =	./objs/
@@ -30,7 +30,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar $(ARFLAGS) $@ $(OBJS)
 	@echo $@ Done !
-	$(CC) main.c -g $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
+#	$(CC) main.c -g $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	mkdir -p $(OBJS_DIR)

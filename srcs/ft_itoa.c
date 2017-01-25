@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/01/25 17:30:43 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/25 18:59:36 by jjourne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ifneg(int n, int *f)
+static int	ifneg(int n, int *f)
 {
 	if (n < 0)
 	{
@@ -10,12 +22,12 @@ int	ifneg(int n, int *f)
 	return (n);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
-	char *s;
-	int base;
-	int i;
-	int f;
+	char	*s;
+	int		base;
+	int		i;
+	int		f;
 
 	i = 0;
 	f = 0;

@@ -1,17 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/01/25 17:40:02 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/25 18:59:55 by jjourne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	istrimspace(int c)
+static int	istrimspace(int c)
 {
 	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
 	return (0);
 }
 
-char	*ft_strtrim(const char *s)
+char		*ft_strtrim(const char *s)
 {
-	char 	*st;
-	int 	i;
-	int 	j;
+	char	*st;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = ft_strlen(s);
