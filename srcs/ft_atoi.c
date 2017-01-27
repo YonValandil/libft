@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 02:40:20 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/25 19:03:13 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/27 19:22:47 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int r;
-	int signe;
+	int			i;
+	long int	r;
+	long int	signe;
 
 	i = 0;
 	r = 0;
@@ -34,5 +34,9 @@ int	ft_atoi(const char *nptr)
 		r = (r * 10) + (nptr[i] - '0');
 		i++;
 	}
+	if ((r * signe) > 2147483647)
+		return (0);
+	if ((r * signe) < -2147483648)
+		return (-1);
 	return (r * signe);
 }

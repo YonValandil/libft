@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 02:42:52 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/19 02:53:52 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/27 19:43:38 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@ void	ft_strclr(char *s)
 {
 	size_t l;
 
-	l = ft_strlen(s);
-	ft_bzero(s, l);
+	if (s)
+	{
+		l = ft_strlen(s);
+		ft_bzero(s, l);
+	}
 }
