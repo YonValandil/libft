@@ -22,6 +22,20 @@ static int	ifneg(int n, int *f)
 	return (n);
 }
 
+/*static char	*sizemallocstr(char *s, int n, int f, int base)
+{
+	
+	while (n >= 10)
+	{
+		n /= 10;
+		base++;
+	}
+	s = ft_strnew(base + f);
+	if (s == NULL)
+		return (NULL);
+	return (s);
+}*/
+
 char		*ft_itoa(int n)
 {
 	char	*s;
@@ -32,8 +46,10 @@ char		*ft_itoa(int n)
 	i = 0;
 	f = 0;
 	base = 1;
+	//s = NULL;
 	n = ifneg(n, &f);
-	s = ft_strnew(n);
+	//s = sizemallocstr(s, n, f, base);
+	s = ft_strnew(11);
 	if (f == 1)
 	{
 		s[i] = '-';

@@ -19,6 +19,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	ns = ft_strnew(len);
+	if (ns == NULL)
+		return (NULL);
 	while (i < len)
 	{
 		ns[i] = s[i + start];

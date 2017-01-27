@@ -34,6 +34,8 @@ char		*ft_strtrim(const char *s)
 	if (j < i)
 		j = i;
 	st = ft_strnew(j - i);
+	if (st == NULL)
+		return (NULL);
 	st = ft_strncpy(st, s + i, j - i);
 	return (st);
 }

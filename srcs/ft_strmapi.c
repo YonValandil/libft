@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = 0;
 	ns = ft_strnew(ft_strlen(s));
+	if (ns == NULL)
+		return (NULL);
 	while (s[i])
 	{
 		ns[i] = (*f)(i, s[i]);

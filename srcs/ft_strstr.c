@@ -19,6 +19,8 @@ char	*ft_strstr(const char *big, const char *little)
 
 	i = 0;
 	j = 0;
+	if (*little == '\0')
+		return ((char*)big);
 	while (big[i])
 	{
 		if (big[i] == little[j])
