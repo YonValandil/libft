@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*ns;
 
+	if (!s1 || !s2)
+		return (0);
 	i = 0;
 	j = 0;
 	ns = ft_strnew(ft_strlen(s1) + ft_strlen(s2));

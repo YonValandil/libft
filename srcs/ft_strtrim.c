@@ -25,6 +25,8 @@ char		*ft_strtrim(const char *s)
 	int		i;
 	int		j;
 
+	if (!s)
+		return (0);
 	i = 0;
 	j = ft_strlen(s);
 	while (istrimspace(s[i]))

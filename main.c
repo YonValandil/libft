@@ -34,7 +34,7 @@ int			main(void)
 	char **s;
 	//char s[] = "le yoyo de tata fait tatayoyo !";
 	//char e[] = "panda";
-	char d[] = "un panda yoyo haha";
+	char d[] = "un panda";
 	//char *strcat;
 	//char *strjoin;
 	//char *mem;
@@ -55,7 +55,7 @@ int			main(void)
 	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 0), strncmp("yoya", "yaya", 0));
 	//printf("\nft_strncmp = %d\nstrncmp = %d\n", ft_strncmp("yoya", "yaya", 4), strncmp("yoya", "yaya", 4));
 	//printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp("yoya", "yaya", 1), memcmp("yoya", "yaya", 1));
-	//printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp(NULL, NULL, 4), memcmp(NULL, NULL, 4));
+	printf("\nft_memcmp = %d\nmemcmp = %d\n", ft_memcmp("", "", 4), memcmp("", "", 4));
 	//printf("\nft_strtrim =%s.\n", ft_strtrim("\t y ooo o \n"));
 
 	//TEST STREQUE STRNEQU
@@ -234,7 +234,7 @@ int			main(void)
 	s = ft_strsplit(d, ' ');
 	printf("\nstrsplit = %s\n", s[0]);
 	printf("\nstrsplit = %s\n", s[1]);
-	//printf("\nstrsplit = %s\n", s[2]);
+	printf("\nstrsplit = %s\n", s[2]);
 
 	//TEST ATOI
 	/*printf("\nft_atoi = %d\n", ft_atoi("\n\t +9997"));

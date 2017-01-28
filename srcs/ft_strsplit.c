@@ -13,7 +13,23 @@
 #include "libft.h"
 #include <stdio.h>
 
-char	**ft_strsplit(char const *s, char c)
+static int	wordc(char const *s, char c)
+{
+	int i;
+	int nw;
+
+	i = 0;
+	nw = 0;
+	while (s[i])
+	{
+		if (s[i + 1 && ]s[i] == c && s[i + 1] != c)
+			++nw;
+		++i;
+	}
+	return (nw);
+}
+
+char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -25,7 +41,7 @@ char	**ft_strsplit(char const *s, char c)
 	j = 0;
 	k = 0;
 	t = 0;
-	ts = (char**)malloc(sizeof(char) * 5);
+	ts = (char**)malloc(sizeof(char) * (wordc(s, c) + 1));
 	if (ts == NULL)
 		return (NULL);
 	printf("\ns: %s\n", s);
@@ -56,5 +72,6 @@ char	**ft_strsplit(char const *s, char c)
 			printf("\ns[j]+1 = %c\n", s[j]);
 		}
 	}
+	//s[] = '\0';
 	return ((char**)ts);
 }
