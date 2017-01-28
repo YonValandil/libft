@@ -6,7 +6,7 @@
 /*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 17:39:29 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/27 22:01:55 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/28 21:09:42 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	wordc(char const *s, char c)
 	nw = 0;
 	while (s[i])
 	{
-		if (s[i + 1 && ]s[i] == c && s[i + 1] != c)
+		if (s[i + 1] && s[i] == c && s[i + 1] != c)
 			++nw;
 		++i;
 	}
@@ -41,37 +41,28 @@ char		**ft_strsplit(char const *s, char c)
 	j = 0;
 	k = 0;
 	t = 0;
-	ts = (char**)malloc(sizeof(char) * (wordc(s, c) + 1));
-	if (ts == NULL)
+	if (!(ts = (char**)malloc(sizeof(char*) * (wordc(s, c) + 1))))
 		return (NULL);
-	printf("\ns: %s\n", s);
 	while (s[j])
 	{
 		while (s[k] && s[k] != c)
-		{
-			printf("\ns[k]: %c\ni = %d\nk = %d\n", s[k], i, k);
 			++k;
-		}
-		printf("\nk - j: %d\n", (k - j));
 		ts[i] = ft_strnew(k - j);
 		while (s[j] && s[j] != c)
 		{
 			ts[i][t] = s[j];
-			printf("\nts[i][t]: %c\ni = %d\nt = %d\n", ts[i][t], i, t);
 			++j;
 			++t;
 		}
-		if (s[j] != '\0')
+		if (s[j] != '\0' && s[j + 1] != '\0')
 		{
-			printf("\ns[j] = %c\n", s[j]);
 			ts[i][t] = '\0';
 			t = 0;
 			++k;
-			j++;
 			++i;
-			printf("\ns[j]+1 = %c\n", s[j]);
+			++j;
 		}
 	}
-	//s[] = '\0';
-	return ((char**)ts);
+	//ts[i + 1] = "\0";
+	return (ts);
 }
