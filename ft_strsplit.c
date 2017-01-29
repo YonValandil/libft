@@ -20,6 +20,10 @@ static int	wordc(char const *s, char c)
 
 	i = 0;
 	nw = 0;
+	//
+	if (s[i] != c && s[i])
+		nw++;
+	//
 	while (s[i])
 	{
 		if (s[i + 1] && s[i] == c && s[i + 1] != c)
@@ -41,7 +45,7 @@ char		**ft_strsplit(char const *s, char c)
 	j = 0;
 	k = 0;
 	t = 0;
-	if (!(ts = (char**)malloc(sizeof(char*) * (wordc(s, c) + 1))))
+	if (!(ts = (char**)malloc(sizeof(char*) * (wordc(s, c) + 1))) || !s || !c)
 		return (NULL);
 	while (s[j])
 	{

@@ -31,7 +31,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		++j;
 		++i;
 	}
-	if (size >= (unsigned int)ft_strlen(dest))
+	//if (size >= (unsigned int)ft_strlen(dest))
+	if (lendest - size > 0)
 		dest[i] = '\0';
 	return (lendest + ft_strlen(src));
 }

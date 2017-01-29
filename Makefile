@@ -4,10 +4,10 @@
 .SUFFIXES:
 
 CC =		gcc
-EXEC =		bin
+#EXEC =		bin
 NAME =		libft.a
 SRCS_DIR =	./
-OBJS_DIR =	./objs/
+OBJS_DIR =	./
 HEADER =	./
 CFLAGS =	-Wall -Werror -Wextra
 ARFLAGS =	-rcs
@@ -38,7 +38,6 @@ $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 
 clean:
 	rm -f $(OBJS)
-	rm -Rf $(OBJS_DIR)
 
 fclean:		clean
 	rm -f $(NAME)
