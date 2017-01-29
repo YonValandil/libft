@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 17:39:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/27 22:10:57 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/29 22:47:22 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	j = 0;
 	if (*little == '\0')
 		return ((char*)big);
+	if (ft_strlen(big) < ft_strlen(little))
+		return (NULL);
 	while (big[i] && i < len)
 	{
 		if (big[i] == little[j])
 		{
-			while (little[j] && big[i + j] == little[j] && j < len)
+			while (little[j] && big[i + j] == little[j] && (i + j) < len)
 				++j;
 			if (little[j] == '\0' || j == len)
 				return ((char*)big + i);

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/25 17:32:22 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 17:47:27 by jjourne          ###   ########.fr       */
+/*   Created: 2017/01/29 18:45:20 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/29 18:54:17 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-char	*ft_strchr(const char *s, int c)
+void ft_lstdel(void)
 {
-	return (ft_memchr(s, c, ft_strlen(s) + 1));
+
 }

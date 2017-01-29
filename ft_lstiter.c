@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/25 17:32:22 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 17:47:27 by jjourne          ###   ########.fr       */
+/*   Created: 2017/01/29 18:47:06 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/29 18:51:07 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-char	*ft_strchr(const char *s, int c)
+void ft_lstiter(void)
 {
-	return (ft_memchr(s, c, ft_strlen(s) + 1));
+
 }
