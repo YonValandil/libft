@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/12 09:33:45 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 18:37:59 by jjourne          ###   ########.fr       */
+/*   Created: 2017/01/30 18:27:42 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/30 18:51:49 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlen(char const *s)
+int		ft_pow(int nb)
 {
-	int i;
+	int r;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	r = nb * nb;
+	return (r);
 }

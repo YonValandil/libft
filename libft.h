@@ -6,7 +6,7 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:35:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 12:02:43 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 18:41:38 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct		s_list
 
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
-int					ft_strlen(char const *s);
+size_t				ft_strlen(char const *s);
 void				ft_swap(int *a, int *b);
 char				*ft_strcpy(char *dest, char const *src);
 char				*ft_strdup(char const *src);
@@ -84,5 +84,8 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					ft_pow(int nb);
+int					*ft_range(int min, int max);
+int					ft_sqrt(int nb);
 
 #endif

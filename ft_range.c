@@ -1,23 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/12 09:33:45 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 18:37:59 by jjourne          ###   ########.fr       */
+/*   Created: 2017/01/30 18:23:55 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/30 18:33:09 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char const *s)
+int		*ft_range(int min, int max)
 {
-	int i;
+	int c;
+	int *t;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	if (max < min || max == min)
+		return (0);
+	c = 0;
+	t = malloc((max - min) * sizeof(int));
+	if (t == NULL)
+		return (0);
+	while (min < max)
+	{
+		t[c] = min;
+		c++;
+		min++;
+	}
+	return (t);
 }

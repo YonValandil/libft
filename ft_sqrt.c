@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jjourne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/12 09:33:45 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 18:37:59 by jjourne          ###   ########.fr       */
+/*   Created: 2017/01/30 18:20:11 by jjourne           #+#    #+#             */
+/*   Updated: 2017/01/30 18:33:13 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char const *s)
+int		ft_sqrt(int nb)
 {
-	int i;
+	int c;
+	int r;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	c = 1;
+	r = 1;
+	while (c <= nb)
+	{
+		r = ft_pow(c);
+		if (r == nb)
+			return (c);
+		c++;
+	}
+	return (0);
 }
