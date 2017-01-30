@@ -6,7 +6,7 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 18:34:42 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 11:51:06 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 19:47:37 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	(void)alst;
-	(void)new;
+	new->next = *alst;
+	*alst = new;
 }
