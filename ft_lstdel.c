@@ -6,13 +6,14 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 18:45:20 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 18:54:17 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 11:50:53 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void ft_lstdel(void)
+void		ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-
+	(void)alst;
+	(void)del;
 }

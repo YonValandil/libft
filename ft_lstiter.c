@@ -6,13 +6,14 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 18:47:06 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 18:51:07 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 11:51:26 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void ft_lstiter(void)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-
+	(void)lst;
+	(void)f;
 }

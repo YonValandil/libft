@@ -6,7 +6,7 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 17:39:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 22:47:22 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 13:07:28 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			while (little[j] && big[i + j] == little[j] && (i + j) < len)
 				++j;
-			if (little[j] == '\0' || j == len)
+			if (little[j] == '\0')
 				return ((char*)big + i);
 			j = 0;
 		}

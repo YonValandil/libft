@@ -20,13 +20,7 @@ CFILES =	ft_putchar ft_putchar_fd ft_putstr ft_putstr_fd						\
 			ft_toupper ft_tolower ft_atoi ft_itoa								\
 			ft_strclr ft_striter ft_striteri ft_strnew ft_strdel ft_strequ ft_strnequ ft_strmap ft_strmapi ft_strchr ft_strrchr ft_strsplit											\
 			ft_swap	\
-			ft_lstadd \
-			ft_lstnew \
-			ft_lstdelone \
-			ft_lstdel  \
-			ft_lstadd  \
-			ft_lstiter \
-			ft_lstmap
+			ft_lstnew ft_lstdelone ft_lstdel ft_lstadd ft_lstiter ft_lstmap
 
 #pattern sub : $(var:pattern=replacement)
 SRCS =		$(CFILES:%=$(SCRS_DIR)%.c)
@@ -37,7 +31,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar $(ARFLAGS) $@ $(OBJS)
 	@echo $@ Done !
-	$(CC) main.c -g $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
+	#$(CC) main.c -g $(NAME) -I$(HEADER) -o $(EXEC) $(CFLAGS) && ./$(EXEC)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	mkdir -p $(OBJS_DIR)

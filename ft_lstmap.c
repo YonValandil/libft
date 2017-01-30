@@ -6,13 +6,15 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 18:49:01 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/29 18:50:47 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/01/30 11:53:24 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-t_list *ft_lstmap(void)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-    return (NULL);
+	(void)lst;
+	(void)f;
+	return (NULL);
 }
