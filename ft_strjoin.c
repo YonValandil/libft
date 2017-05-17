@@ -6,7 +6,7 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 17:37:01 by jjourne           #+#    #+#             */
-/*   Updated: 2017/05/09 02:35:12 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/05/18 01:25:51 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (s1[++i])
 		ns[i] = s1[i];
 	while (s2[++j])
-	{
-		ns[i] = s2[j];
-		++i;
-	}
+		ns[i++] = s2[j];
 	ns[i] = '\0';
 	return (ns);
 }
