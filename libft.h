@@ -6,7 +6,7 @@
 /*   By: jjourne <jjourne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 09:35:14 by jjourne           #+#    #+#             */
-/*   Updated: 2017/01/30 18:41:38 by jjourne          ###   ########.fr       */
+/*   Updated: 2017/09/07 04:06:37 by jjourne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 char				*ft_itoa(int n);
+char				*ft_uimaxtoa_base(uintmax_t n, int base);
 char				*ft_strtrim(char const *s);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
