@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 typedef struct		s_list
 {
@@ -64,13 +65,14 @@ void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 char				*ft_itoa(int n);
-char				*ft_uimaxtoa_base(uintmax_t n, int base);
+char				*ft_uimaxtoa_base(uintmax_t n, unsigned int base);
 char				*ft_strtrim(char const *s);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strappend(char **s1, char **s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);

@@ -12,15 +12,39 @@
 
 #include "libft.h"
 
-char    *ft_uimaxtoa_base(uimax_t n, int base)
+static char		*sizemallocstr(char *str, uintmax_t n, unsigned int divider, unsigned int base)
 {
-    char    *str;
+	while (n >= base)
+	{
+		n /= base;
+		divider++;
+	}
+	str = ft_strnew(divider);
+	if (str == NULL)
+		return (exit_failure);
+	return (str);
+}
 
-    str = NULL;
-    while (n < base)
-    {
-        
-        n /= base;
-    }
+char			*ft_uimaxtoa_base(uintmax_t n, unsigned int base)
+{
+    char    		*str;
+	unsigned int	divider;
+	unsigned int	i;
+
+	if (!n)
+		return (ft_strdup("0"));
+	divider = 1;
+	str = NULL;
+	str = sizemallocstr(str, n, divider, base);
+	i = 0;
+	while ((n / divider) >= base)
+		divider *= base;
+	while (divider > 0)
+	{
+		str[i] = ((n / divider) % base) + '0';
+		divider /= base;
+		++i;
+	}
+	str[i] = '\0';
     return(str);
 }
