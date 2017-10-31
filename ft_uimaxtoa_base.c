@@ -21,7 +21,7 @@ static char		*sizemallocstr(char *str, uintmax_t n, unsigned int divider, unsign
 	}
 	str = ft_strnew(divider);
 	if (str == NULL)
-		return (exit_failure);
+		return (NULL);
 	return (str);
 }
 
@@ -36,6 +36,8 @@ char			*ft_uimaxtoa_base(uintmax_t n, unsigned int base)
 	divider = 1;
 	str = NULL;
 	str = sizemallocstr(str, n, divider, base);
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	while ((n / divider) >= base)
 		divider *= base;
