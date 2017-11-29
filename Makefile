@@ -11,8 +11,8 @@ HEADER =		include/
 CFLAGS =		-Wall -Werror -Wextra
 ARFLAGS =		-rcs
 
-FT_IO =			ft_putchar ft_putchar_fd ft_putstr ft_putstr_fd \
-				ft_putnbr ft_putnbr_fd ft_putendl ft_putendl_fd
+FT_IO =			ft_get_next_line ft_putchar ft_putchar_fd ft_putstr \
+				ft_putstr_fd ft_putnbr ft_putnbr_fd ft_putendl ft_putendl_fd
 
 FT_LIST =		ft_lstnew ft_lstdelone ft_lstdel ft_lstadd ft_lstadd_end \
 				ft_lstiter ft_lstmap
@@ -30,7 +30,7 @@ FT_STRING =		ft_strcpy ft_strncpy ft_strdup ft_strlen  ft_strcmp ft_strncmp \
 FT_ARRAY =	 	ft_arrlen
 
 FT_MEMORY = 	ft_bzero ft_memalloc ft_realloc ft_memdel ft_memset ft_memmove \
-				ft_memcpy ft_memccpy ft_memcmp ft_memchr ft_swap
+				ft_memcpy ft_memccpy ft_memcmp ft_memchr ft_memjoin ft_swap
 
 #pattern sub : $(var:pattern=replacement)
 SRC_IO =		$(FT_IO:%=$(SRC_DIR)/ft_io/%.c)
