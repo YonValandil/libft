@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+# include "ft_get_next_line.h"
 
 typedef struct		s_list
 {

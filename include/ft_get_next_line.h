@@ -28,6 +28,6 @@ typedef struct			s_fd_list
 	struct s_fd_list	*next;
 }						t_fd_list;
 
-int						get_next_line(const int fd, char **line);
+int						ft_get_next_line(const int fd, char **line);
 
 #endif

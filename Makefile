@@ -32,7 +32,6 @@ FT_ARRAY =	 	ft_arrlen
 FT_MEMORY = 	ft_bzero ft_memalloc ft_realloc ft_memdel ft_memset ft_memmove \
 				ft_memcpy ft_memccpy ft_memcmp ft_memchr ft_memjoin ft_swap
 
-#pattern sub : $(var:pattern=replacement)
 SRC_IO =		$(FT_IO:%=$(SRC_DIR)/ft_io/%.c)
 SRC_LIST =		$(FT_LIST:%=$(SRC_DIR)/ft_list/%.c)
 SRC_MATH =		$(FT_MATH:%=$(SRC_DIR)/ft_math/%.c)
